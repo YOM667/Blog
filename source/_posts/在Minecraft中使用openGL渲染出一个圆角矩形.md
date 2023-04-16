@@ -4,7 +4,7 @@ date: 2023-04-16 16:43:34
 tags: Minecraft
 ---
 ## 声明
-本文章是观看某些Minecraft 模组源代码 发布的,并不是自己的想法,博主也是个skid.
+本文章是观看某些Minecraft 模组源代码 发布的,并不是自己的想法,博主也是个skidder.
 大家可以通过自己的想法实现
 
 全部代码在文章最底部你可以选择复制粘贴
@@ -132,4 +132,5 @@ public static void drawRoundedRect(int xStart, float yStart, float xEnd, float y
 ```
 
 ## 结束
-感谢您的观看
+感谢!!!
+欢迎您下次再来
