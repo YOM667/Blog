@@ -14,18 +14,18 @@ info:
   # Author name
   author: YouM
   # Site URL
-  url: https://redefine.ohevan.com
+  url: https://github.com/YOM667
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: favicon.ico
   # Site logo
-  logo: 
+  logo: http://thirdqq.qlogo.cn/g?b=sdk&k=icwv0r8sj89jAJn16GrFXAA&kti=Y9OXzQAAAAA&s=140&t=1673867515
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: http://thirdqq.qlogo.cn/g?b=sdk&k=icwv0r8sj89jAJn16GrFXAA&kti=Y9OXzQAAAAA&s=140&t=1673867515
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -94,6 +94,8 @@ fontawesome: # Pro v6.2.1
 home_banner:
   # Whether to enable home banner
   enable: true
+  # style of home banner
+  style: fixed # static or fixed
   # Home banner image
   image: 
     light: /images/wallhaven-wqery6-light.webp # light mode
@@ -158,19 +160,19 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
-    # Status: 
-    #   path: https://status.evanluo.top/
-    #   icon: fa-regular fa-chart-bar
-    # About: 
-    #   icon: fa-regular fa-user
-    #   submenus:
-    #     Me: /about
-    #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
-    #     Blog: https://ohevan.com
-    #     Friends: /friends
+    Archives: 
+      path: /archives 
+      icon: fa-regular fa-archive # can be empty
+    Status: 
+      path: https://status.evanluo.top/
+      icon: fa-regular fa-chart-bar
+    About: 
+      icon: fa-regular fa-user
+      submenus:
+        Me: /about
+        Github: https://github.com/YOM667
+        Blog: /
+        Friends: https://mooncc.cn/
     # Links: 
     #   icon: fa-regular fa-link
     #   submenus:
@@ -189,6 +191,22 @@ navbar:
 
 # HOME PAGE ARTICLE SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 home:
+# Sidebar settings
+  sidebar:
+    enable: true # Whether to enable sidebar
+    position: left # Sidebar position. left, right
+    first_item: menu # First item in sidebar. menu, info
+    announcement: YouM 的Hexo博客成功建立  # Announcement text
+    links:
+      Archives: 
+        path: /archives 
+        icon: fa-regular fa-archive # can be empty
+      Tags: 
+        path: /tags 
+        icon: fa-regular fa-tags # can be empty
+      Categories: 
+        path: /categories 
+        icon: fa-regular fa-folder # can be empty
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
   # Article categories visibility
