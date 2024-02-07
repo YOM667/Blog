@@ -26,10 +26,10 @@ tags:
 > git log "查看提交历史"
 > git blame (filename) "查看文件修改记录"
 ## 提交规范
-> feat 或 feature “新的功能”
+> feat 或 feature "新的功能"
 > 示例: feat(XXX): add new feature about…
-> fix ”修复错误”
+> fix  "修复错误"
 > 示例: fix(XXX): fix bugs about…
-> docs ”修改或添加文档”
+> docs "修改或添加文档"
 > 示例: docs(XXX): add new docs about…
 
