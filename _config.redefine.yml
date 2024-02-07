@@ -19,6 +19,7 @@ info:
 
 
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
   favicon: favicon.ico
@@ -33,12 +34,15 @@ defaults:
 colors:
   #Primary color
   primary: "#A31F34"
-  # Secondary color (beta)
-  secondary: 
+  # Secondary color (TBD)
+  secondary:
+  # Default theme mode initial value (will be overwritten by prefer-color-scheme)
+  default_mode: light # light, dark
 # COLORS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
 # SITE CUSTOMIZATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# Docs: https://redefine-docs.ohevan.com/basic/global
 global:
   # Custom fonts
   fonts:
@@ -64,16 +68,23 @@ global:
   scroll_progress:
     bar: true # progress bar
     percentage: true # percentage
-  # Website counter (powered by https://busuanzi.ibruce.info/)
-  busuanzi_counter:
+  # Website counter
+  website_counter:
+    url: https://cn.vercount.one/js # counter API URL (no need to change)
     enable: true # enable website counter or not
     site_pv: true # site page view
     site_uv: true # site unique visitor
     post_pv: true # post page view
-  # Whether to enable PJAX
-  pjax: true
+  # Whether to enable single page experience (using swup). See https://swup.js.org/. similar to pjax
+  single_page: true
+  # Whether to enable Preloader.
+  preloader: true
   # Whether to enable open graph
   open_graph: true
+  # Google Analytics
+  google_analytics:
+    enable: false # Whether to enable Google Analytics
+    id:  # Google Analytics Measurement ID
 # SITE CUSTOMIZATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
     
 
@@ -105,6 +116,9 @@ home_banner:
   # Home banner subtitle
   subtitle:
     text: [] # subtitle text, array
+    hitokoto:  # 一言配置
+      enable: false # Whether to enable hitokoto
+      api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
     typing_speed: 100 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
     starting_delay: 500 # Start delay (ms)
@@ -135,6 +149,8 @@ home_banner:
   social_links:
     # Whether to enable
     enable: true
+    # Social links style
+    style: default # default, reverse, center
     # Social links
     links:
       github: https://github.com/YOM667  # your GitHub URL
@@ -155,6 +171,10 @@ navbar:
     left: "#f78736" #left side 
     right: "#367df7"  #right side
     transparency: 35 #percent (10-99)
+  # Navbar width (usually no need to modify)
+  width:
+    home: 1200px #home page
+    pages: 1000px #other pages
   # Navbar links
   links:
     Home: 
@@ -228,6 +248,16 @@ articles:
     line_height: 1.5 # Line height
     image_border_radius: 14px # image border radius
     image_alignment: center # image alignment. left, center
+    image_caption: false # Whether to display image caption
+    link_icon: true # Whether to display link icon
+    title_alignment: left # Title alignment. left, center
+    headings_top_spacing: # Top spacing for headings from h1-h6
+      h1: 5rem
+      h2: 4rem
+      h3: 2.8rem
+      h4: 2.5rem
+      h5: 2.2rem
+      h6: 2rem
   # Word count. Requires hexo-wordcount (npm install hexo-wordcount). See https://github.com/willin/hexo-wordcount
   word_count:
     enable: true # Whether to enable
@@ -241,10 +271,10 @@ articles:
   # Code block settings
   code_block:
     copy: true # Whether to enable code block copy button
-    style: mac # mac | simple
+    style: simple # mac | simple
     font: # Custom font
       enable: false # Whether to enable
-      family: # Font family
+      family:  # Font family
       url: # Font URL to CSS file
   # Table of contents settings
   toc:
