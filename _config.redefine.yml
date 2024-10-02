@@ -352,12 +352,12 @@ inject:
   enable: false
   # Inject custom head html code
   head: 
-    -
+    - 
     -
   # Inject custom footer html code
   footer:
-    -
-    -
+    - 
+    - 
 # INJECT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 

@@ -409,12 +409,12 @@ plugins:
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
     enable: true # Whether to enable
-    type: fixed # fixed, mini
+    type: mini # fixed, mini
     audios:
       - name: 千囍与手抄卷 # audio name
         artist: 闫东炜&双笙 # audio artist
         url: https://youm.netlify.app/assets/music/music.mp3 # audio url
-        cover: http://p2.music.126.net/Ho_V8nRVIHzwsCnMUggi7Q==/109951164640262232.jpg?param=130y130 # audio cover url
+        cover:  # audio cover url
 #      - name: # audio name
 #        artist: # audio artist
 #        url: # audio url
